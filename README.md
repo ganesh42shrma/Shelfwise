@@ -1,4 +1,3 @@
-Sure! Here is a structured `README.md` for your project, Shelfwise:
 
 ```markdown
 # Shelfwise
@@ -96,5 +95,3 @@ Shelfwise is a React-based web application that allows users to explore and mana
 This project is licensed under the MIT License.
 
 ```
-
-Feel free to customize this `README.md` further to better fit your project's specifics and your preferences.
