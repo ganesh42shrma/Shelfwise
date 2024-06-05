@@ -1,0 +1,4 @@
+Book title color : #2f4e4d
+book button color : #b89270
+book button hover color : #867764
+background transperency : .03

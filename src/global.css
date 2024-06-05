@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/pexels-steve-25011847.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+    --light-blue-gray: #C7DBF7; /* Light Blue Gray */
+    --pale-slate-blue: #BFC7DE; /* Pale Slate Blue */
+    --bluish-gray: #75708C; /* Bluish Gray */
+    --muted-coral: #C59594; /* Muted Coral */
+    --jet-black: #010101; /* Jet Black */
+  }
+  

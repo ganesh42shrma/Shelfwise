@@ -1,0 +1,126 @@
+.data-table-container {
+    padding-top: 50px; 
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #b89270;
+}
+
+th, td {
+    border: 1px solid #121481;
+    padding: 8px;
+}
+
+th {
+    cursor: pointer;
+    background-color: #867764;
+}
+
+
+
+.pagination li {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination .active {
+    font-weight: bold;
+    color: #121481;
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.user-text {
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FF407D;
+}
+
+.user-name {
+    font-size: rem;
+    font-weight: 900;
+}
+
+.text-container {
+    text-align: center;
+    color:black;
+    font-weight: 300;
+    width: 100%;
+    font-size: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.text-container span{
+    color: white;
+}
+
+.text-container div {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-container div:first-of-type {
+    animation: showup 7s forwards;
+}
+
+.text-container div:last-of-type {
+    width: 100%;
+    animation: reveal 7s forwards;
+}
+
+@keyframes showup {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 1; } 
+}
+
+@keyframes reveal {
+    0% { opacity: 0; width: 0px; }
+    20% { opacity: 1; width: 0px; }
+    30% { width: 100%; }
+    80% { opacity: 1; }
+    100% { opacity: 1; width: 100%; } 
+}
+
+.back-to-books{
+    display: flex;
+    flex-direction: row;
+    width:150px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background: #b89270;
+}
+.back-to-books:hover{
+    background: #867764; /* Opaque background */
+    transform: scale(1.05);
+}
+
+.no-underline{
+  text-decoration: none;
+  color: inherit;
+}
+.no-underline:hover{
+    text-decoration: none;
+}
+
+.page-buttons{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}

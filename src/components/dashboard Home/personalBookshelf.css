@@ -1,0 +1,65 @@
+/* Ensure full height layout and proper positioning */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+}
+
+.personal-bookshelf-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.personal-bookshelf-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  background-color: #b89270;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1em;
+  width: 100px;
+  height: 50px;
+}
+
+.home-button:hover {
+  background-color:#867764 ;
+}
+
+.bookshelf-item {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.book-details {
+  flex-grow: 1;
+}
+
+.remove-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9em;
+  width: 120px;
+}
+
+.remove-button:hover {
+  background-color: #d32f2f;
+}
+
+.book-title{
+  color: white;
+}
