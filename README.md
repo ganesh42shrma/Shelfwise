@@ -1,62 +1,49 @@
+Sure! Here is a structured `README.md` for your project, Shelfwise:
 
+```markdown
+# Shelfwise
 
-# Admin Dashboard
-
-This project is an admin dashboard created as a front-end internship assignment. The dashboard lists book data in a tabular format, fetched from the Open Library API. The application includes features like pagination, search by author, CSV download, and authentication.
+Shelfwise is a React-based web application that allows users to explore and manage their personal collection of books using the Open Library API. It features authentication via Firebase, personalized book shelf management, and data export to CSV.
 
 ## Features
 
-1. **Data Table**:
-   - Displays book records in a tabular format.
-   - Columns: `ratings_average`, `author name`, `title`, `first_publish_year`, `subject`, `author_birth_date`, `author_top_work`.
+1. **Authentication**:
+   - User registration and login via Firebase.
+   - Google Sign-In provider for authentication.
 
-2. **API Integration**:
-   - Fetches book records from the [Open Library API](https://openlibrary.org/developers/api) using Axios for API calls.
-   - Includes a search functionality to find books by author name.
+2. **Home Page**:
+   - Fetches and displays books from the Open Library API.
+   - Search functionality to find books by author name.
+   - Pagination support to display 10, 50, or 100 books per page.
+   - "Go back to home" button to reset search queries and fetch all books.
 
-3. **Pagination**:
-   - Default: 10 books per page.
-   - Options to change to 50 or 100 books per page.
+3. **Personal Bookshelf**:
+   - Add books to your personal bookshelf.
+   - Persistent storage of bookshelf data using Firebase Firestore.
+   - View books in your personal bookshelf.
+   - Remove books from your personal bookshelf.
+   - Separate page for managing your bookshelf.
 
-4. **Search**:
-   - Search books by author name.
-   - A button to reset the search and fetch all books again.
-   - Note: API calls might be slow to load with the search function. Please have patience after clicking search and wait for the results.
-
-5. **CSV Download**:
-   - Ability to download the current page results in CSV format.
-
-6. **Authentication**:
-   - Implemented using Firebase.
-   - Includes login and registration of new accounts.
-
-7. **UI**:
-   - Simple and minimalistic design with basic color scheme.
-   - Includes a boilerplate footer.
-
-## Brownie Points Achievements
-
-- **Search Books Feature**: Added search functionality by author name.
-- **Download CSV**: Implemented the ability to download the current results in CSV format.
-- **Authentication**: Added authentication for logging into the dashboard.
+4. **CSV Download**:
+   - Download book information displayed on the current page in CSV format.
 
 ## Technologies Used
 
-- **React.js**: Main framework used for the project.
-- **Axios**: For making API calls.
-- **Firebase**: For authentication.
+- **React.js**: Main framework used for building the application.
+- **Firebase**: Used for authentication (including Google Sign-In) and Firestore for database.
 - **Open Library API**: Source of book data.
+- **Axios**: For making API calls.
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ganesh42shrma/admin-dashboard-nua.git
+   git clone https://github.com/yourusername/shelfwise.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd admin-dashboard-nua
+   cd shelfwise
    ```
 
 3. Install dependencies:
@@ -64,8 +51,9 @@ This project is an admin dashboard created as a front-end internship assignment.
    npm install
    ```
 
-4. Set up Firebase authentication:
-   - Create a Firebase project and enable authentication.
+4. Set up Firebase:
+   - Create a Firebase project and enable Firestore and Authentication.
+   - Set up Google Sign-In provider.
    - Add your Firebase configuration to the project.
 
 5. Start the development server:
@@ -75,23 +63,38 @@ This project is an admin dashboard created as a front-end internship assignment.
 
 ## Usage
 
-1. **Login/Register**: Use the login or register options to access the dashboard.
-2. **View Books**: The default view shows 10 books per page.
-3. **Change Pagination**: Select the desired number of books per page (10, 50, or 100).
-4. **Search by Author**: Use the search bar to find books by author name. Click the reset button to return to the full list.
-5. **Download CSV**: Click the download button to get a CSV of the current page results.
+1. **Sign Up/Login**:
+   - Register a new account or login using Google Sign-In.
+   
+2. **Home Page**:
+   - View a list of books fetched from the Open Library API.
+   - Use the search bar to find books by author name.
+   - Use the pagination controls to select the number of books displayed per page (10, 50, or 100).
+   - Click "Go back to home" to reset the search and view all books.
+
+3. **Personal Bookshelf**:
+   - Add books to your personal bookshelf from the home page.
+   - Access the personal bookshelf from a separate page.
+   - View and manage books in your personal bookshelf.
+   - Remove books from the bookshelf as needed.
+
+4. **CSV Download**:
+   - Click the download button to export the book information displayed on the current page to a CSV file.
 
 ## Known Issues
 
-- The API calls, especially the search function, may be slow to load. Please wait patiently for the results to be returned.
-- Sorting of columns has not been implemented due to time constraints and lack of familiarity with the implementation process.
+- The API response time may be slow, especially when searching for books. Please be patient while the results are loading.
 
 ## Future Improvements
 
-- Add sorting functionality for all columns.
-- Add editing of row entries (dependent on the availability of a POST API).
-- Improve UI/UX for better user experience.
+- Improve the user interface for a better user experience.
+- Add more features for book management and organization.
+- Optimize API calls to reduce load times.
 
 ## License
 
 This project is licensed under the MIT License.
+
+```
+
+Feel free to customize this `README.md` further to better fit your project's specifics and your preferences.
