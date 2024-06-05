@@ -1,5 +1,3 @@
-
-```markdown
 # Shelfwise
 
 Shelfwise is a React-based web application that allows users to explore and manage their personal collection of books using the Open Library API. It features authentication via Firebase, personalized book shelf management, and data export to CSV.
@@ -94,4 +92,3 @@ Shelfwise is a React-based web application that allows users to explore and mana
 
 This project is licensed under the MIT License.
 
-```
